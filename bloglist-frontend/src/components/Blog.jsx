@@ -24,7 +24,7 @@ const Blog = ({ blog, onLike, poistaBlogi, user }) => {
 
   return (
     <div style={blogStyle}>
-      <div>
+      <div className='blog'>
         {blog.title} {blog.author}
         <button onClick={toggleView}>{viewAll ? 'hide' : 'view'}</button>
       </div>

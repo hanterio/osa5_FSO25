@@ -165,7 +165,7 @@ const App = () => {
 
           <h2>Blogs</h2>
           {blogs
-            .slice() // estää alkuperäisen listan muuttamisen
+            .slice()
             .sort((a, b) => b.likes - a.likes)
             .map(blog => (
               <Blog
